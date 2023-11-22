@@ -23,11 +23,14 @@
 .romantis-text {
     font-size: 24px;
     overflow: hidden;
-    white-space: nowrap;
     border-right: 2px solid white;
     animation: typing 3s steps(40) forwards, fadeIn 2s 3s forwards;
     margin: 20px;
-    text-align: left; /* Mengatur teks menjadi rata kiri */
+    text-align: left;
+    max-width: 80vw; /* Menetapkan lebar maksimum sebesar 80% dari lebar viewport */
+    word-wrap: break-word; /* Teks yang melebihi lebar akan pindah ke baris berikutnya */
+    column-count: 2; /* Membagi teks menjadi dua kolom */
+    column-gap: 20px; /* Memberikan jarak antar kolom */
 }
 
         @keyframes typing {

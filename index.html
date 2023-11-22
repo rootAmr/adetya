@@ -20,14 +20,15 @@
             height: 100vh;
         }
 
-        .romantis-text {
-            font-size: 24px;
-            overflow: hidden; /* Membuat teks tidak terlihat saat awal */
-            white-space: nowrap; /* Mencegah teks turun ke baris baru */
-            border-right: 2px solid white; /* Efek garis yang menandakan mengetik */
-            animation: typing 3s steps(40) forwards, fadeIn 2s 3s forwards; /* Animasi mengetik dan fade-in */
-            margin: 20px; /* Menambahkan margin pada teks */
-        }
+.romantis-text {
+    font-size: 24px;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid white;
+    animation: typing 3s steps(40) forwards, fadeIn 2s 3s forwards;
+    margin: 20px;
+    text-align: left; /* Mengatur teks menjadi rata kiri */
+}
 
         @keyframes typing {
             from {

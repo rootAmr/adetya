@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animasi Romantis</title>
+    <style>
+        body {
+            background-color: #1f1f1f; /* Warna latar belakang gelap */
+            color: #ffffff; /* Warna teks putih */
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .romantis-text {
+            font-size: 24px;
+            overflow: hidden; /* Membuat teks tidak terlihat saat awal */
+            white-space: nowrap; /* Mencegah teks turun ke baris baru */
+            border-right: 2px solid white; /* Efek garis yang menandakan mengetik */
+            animation: typing 3s steps(40) forwards, fadeIn 2s 3s forwards; /* Animasi mengetik dan fade-in */
+            margin: 20px; /* Menambahkan margin pada teks */
+        }
+
+        @keyframes typing {
+            from {
+                width: 0; /* Mulai dari teks lebar 0 */
+            }
+
+            to {
+                width: 100%; /* Akhir pada lebar 100% */
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0; /* Mulai dari keadaan tidak terlihat */
+            }
+
+            to {
+                opacity: 1; /* Akhir pada keadaan terlihat sepenuhnya */
+            }
+        }
+
+        .love-icon {
+            color: #ff5f5f; /* Warna merah */
+            font-size: 36px;
+        }
+
+        /* Media query untuk ukuran layar kecil, seperti perangkat seluler */
+        @media only screen and (max-width: 600px) {
+            .romantis-text {
+                font-size: 18px;
+            }
+
+            .love-icon {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="romantis-text">
+        <p>
+            Untuk kekasih tercinta,<br>
+            Hari ini, aku ingin mengungkapkan betapa beruntungnya diriku memiliki seseorang seperti dirimu dalam hidupku.<br>
+            Sejak kita bersama, setiap momen terasa seperti petualangan tak terlupakan. Senyumanmu adalah sinar mentari yang menerangi hari-hariku, dan cintamu menjadi alasan mengapa hatiku selalu penuh kebahagiaan.<br>
+
+            Dalam setiap detik yang kita lewati bersama, aku menyadari bahwa kita membangun lebih dari sekadar hubungan romantis. Kita membangun fondasi kepercayaan, pengertian, dan dukungan tanpa syarat. Bersamamu, aku merasa diterima sepenuhnya, dengan semua kelebihan dan kekuranganku. Kau adalah tempat perlindungan yang nyaman, di mana aku bisa menjadi diriku sendiri tanpa takut dihakimi.<br>
+
+            Setiap kali aku melihat matamu, aku merasakan keajaiban cinta yang kita bagi. Itu seperti membaca puisi indah yang mengisahkan kisah kita sendiri. Rasa sayang yang tumbuh di antara kita tidak hanya kata-kata, tetapi lebih dari itu, ia adalah getaran yang menyatu dalam setiap denyutan jantung kita.<br>
+
+            Terima kasih, sayang, karena telah menjadi pendamping setia dalam setiap langkah hidupku. Denganmu, setiap tantangan menjadi lebih ringan, dan setiap keberhasilan menjadi lebih berarti. Aku berjanji untuk selalu ada untukmu, seperti bagaimana kau selalu ada untukku.<br>
+
+            Mengingat perjalanan kita bersama, aku merasa semakin yakin bahwa kita ditakdirkan untuk saling melengkapi. Kita adalah pasangan yang cocok, dan aku berharap kita dapat terus mengejar impian bersama. Aku mencintaimu lebih dari kata-kata dapat ungkapkan, lebih dari bintang di langit, lebih dari sejuta kata romantis yang pernah ditulis.<br>
+
+            Jadi, sayang, mari kita lanjutkan perjalanan ini dengan hati terbuka dan tangan saling menggenggam. Bersama, kita bisa melewati segala rintangan dan merayakan setiap kebahagiaan. Aku bersyukur memilikimu sebagai kekasih dan sahabat sejati. Hidup ini lebih indah karena kita berdua, dan aku tak sabar untuk membangun masa depan yang penuh cinta bersamamu.<br>
+
+            Dengan cinta sejati,
+            <span class="love-icon">❤️</span>
+        </p>
+    </div>
+
+    <script>
+        // Opsi tambahan: Menghentikan animasi setelah selesai
+        const romantisText = document.querySelector('.romantis-text');
+        romantisText.addEventListener('animationend', () => {
+            romantisText.style.borderRight = 'none'; // Menghapus efek garis setelah selesai
+        });
+    </script>
+</body>
+
+</html>

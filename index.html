@@ -7,8 +7,8 @@
     <title>Adeseptya</title>
     <style>
         body {
-            background-color: #1f1f1f; /* Warna latar belakang gelap */
-            color: #ffffff; /* Warna teks putih */
+            background-color: #1f1f1f;
+            color: #ffffff;
             font-family: 'Arial', sans-serif;
             text-align: center;
             margin: 0;
@@ -20,7 +20,7 @@
             height: 100vh;
         }
 
-.romantis-text {
+        .romantis-text {
     font-size: 24px;
     overflow: hidden;
     border-right: 2px solid white;
@@ -35,30 +35,29 @@
 
         @keyframes typing {
             from {
-                width: 0; /* Mulai dari teks lebar 0 */
+                width: 0;
             }
 
             to {
-                width: 100%; /* Akhir pada lebar 100% */
+                width: 100%;
             }
         }
 
         @keyframes fadeIn {
             from {
-                opacity: 0; /* Mulai dari keadaan tidak terlihat */
+                opacity: 0;
             }
 
             to {
-                opacity: 1; /* Akhir pada keadaan terlihat sepenuhnya */
+                opacity: 1;
             }
         }
 
         .love-icon {
-            color: #ff5f5f; /* Warna merah */
+            color: #ff5f5f;
             font-size: 36px;
         }
 
-        /* Media query untuk ukuran layar kecil, seperti perangkat seluler */
         @media only screen and (max-width: 600px) {
             .romantis-text {
                 font-size: 18px;
@@ -76,22 +75,21 @@
         <p>
             Untuk kekasih tercinta,<br>
 
-Saya merasa sangat beruntung memiliki dirimu. Setiap momen bersama terasa sebagai petualangan tak terlupakan. Senyumanmu adalah sinar mentari, cintamu membuat hatiku selalu bahagia. Kita membangun fondasi kepercayaan dan dukungan tanpa syarat. Bersamamu, aku merasa diterima sepenuhnya, tempat perlindungan yang nyaman. Melihat matamu, aku merasakan keajaiban cinta kita seperti puisi indah. Rasa sayang di antara kita lebih dari kata-kata, ia menyatu dalam denyutan jantung kita.
+            Saya merasa sangat beruntung memiliki dirimu. Setiap momen bersama terasa sebagai petualangan tak terlupakan. Senyumanmu adalah sinar mentari, cintamu membuat hatiku selalu bahagia. Kita membangun fondasi kepercayaan dan dukungan tanpa syarat. Bersamamu, aku merasa diterima sepenuhnya, tempat perlindungan yang nyaman. Melihat matamu, aku merasakan keajaiban cinta kita seperti puisi indah. Rasa sayang di antara kita lebih dari kata-kata, ia menyatu dalam denyutan jantung kita.
 
-Terima kasih, sayang, karena menjadi pendamping setia. Denganmu, tantangan lebih ringan, keberhasilan lebih berarti. Aku berjanji selalu ada untukmu. Perjalanan kita membuatku yakin kita ditakdirkan saling melengkapi. Kita adalah pasangan cocok, berharap terus mengejar impian bersama. Aku mencintaimu lebih dari kata-kata, lebih dari bintang di langit, lebih dari sejuta kata romantis.
+            Terima kasih, sayang, karena menjadi pendamping setia. Denganmu, tantangan lebih ringan, keberhasilan lebih berarti. Aku berjanji selalu ada untukmu. Perjalanan kita membuatku yakin kita ditakdirkan saling melengkapi. Kita adalah pasangan cocok, berharap terus mengejar impian bersama. Aku mencintaimu lebih dari kata-kata, lebih dari bintang di langit, lebih dari sejuta kata romantis.
 
-Jadi, sayang, mari lanjutkan perjalanan ini dengan hati terbuka. Kita bisa lewati rintangan, rayakan kebahagiaan bersama. Aku bersyukur memiliki kamu sebagai kekasih dan sahabat sejati. Hidup lebih indah berdua, dan aku tak sabar membangun masa depan penuh cinta bersamamu.
+            Jadi, sayang, mari lanjutkan perjalanan ini dengan hati terbuka. Kita bisa lewati rintangan, rayakan kebahagiaan bersama. Aku bersyukur memiliki kamu sebagai kekasih dan sahabat sejati. Hidup lebih indah berdua, dan aku tak sabar membangun masa depan penuh cinta bersamamu.
 
-Dengan cinta sejati.<br>
+            Dengan cinta sejati.<br>
             <span class="love-icon">❤️</span>
         </p>
     </div>
 
     <script>
-        // Opsi tambahan: Menghentikan animasi setelah selesai
         const romantisText = document.querySelector('.romantis-text');
         romantisText.addEventListener('animationend', () => {
-            romantisText.style.borderRight = 'none'; // Menghapus efek garis setelah selesai
+            romantisText.style.borderRight = 'none';
         });
     </script>
 </body>
